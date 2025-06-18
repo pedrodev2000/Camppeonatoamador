@@ -1,0 +1,26 @@
+{
+  "name": "camppeonatoamador",
+  "version": "1.0.0",
+  "description": "atividade Final",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrodev2000/Camppeonatoamador.git"
+  },
+  "author": "Pedro Moraes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrodev2000/Camppeonatoamador/issues"
+  },
+  "homepage": "https://github.com/pedrodev2000/Camppeonatoamador#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "session": "^0.1.0"
+  }
+}
