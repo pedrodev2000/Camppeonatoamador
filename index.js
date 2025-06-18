@@ -357,7 +357,7 @@ function cadastrarJogador (req, resp)
     }
     resp.end();
 }
-function cadastrarJogador (req, resp)
+function cadastroJogador (req, resp)
 {
     const nomeJogador = req.body.nomeJogador;
     const equipe = req.body.equipe;
