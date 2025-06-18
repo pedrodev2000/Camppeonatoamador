@@ -137,7 +137,7 @@ function CadastrarEquipe (req, resp)
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-lg-5">
-                        <form action="/cadastroInteressados" method="POST">
+                        <form action="/cadastrarEquipe" method="POST">
                             <legend class="text-center mt-3">Cadastro de equipe</legend>
                             <div class="row g-3">
                                 <div class="col-md-12">
@@ -267,7 +267,7 @@ function cadastrarJogador (req, resp)
 
     if(nomeJogador && equipe && numeroJogador)
     {
-        listaPets.push ({
+        listaJogador.push ({
             nomeJogador: nomeJogador,
             equipe: equipe,
             numeroJogador: numeroJogador
@@ -289,7 +289,7 @@ function cadastrarJogador (req, resp)
         
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="menu.html">Pet shop</a>
+                  <a class="navbar-brand" href="menu.html">Campeonato amador de volei</a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -357,7 +357,7 @@ function cadastrarJogador (req, resp)
     }
     resp.end();
 }
-function cadastrarPets (req, resp)
+function cadastrarJogador (req, resp)
 {
     const nomeJogador = req.body.nomeJogador;
     const equipe = req.body.equipe;
@@ -365,7 +365,7 @@ function cadastrarPets (req, resp)
 
     if(nomeJogador && equipe && numeroJogador)
     {
-        listaPets.push ({
+        listaJogador.push ({
             nomeJogador: nomeJogador,
             equipe: equipe,
             numeroJogador: numeroJogador
@@ -405,7 +405,7 @@ function cadastrarPets (req, resp)
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-lg-5">
                         <form action="/cadastrarJogador" method="POST">
-                            <legend class="text-center mt-3">Cadastro de Pets</legend>
+                            <legend class="text-center mt-3">Cadastro de Jogador</legend>
                             <div class="row g-3">
                                 <div class="col-md-12">
                                     <label for="nomeJogador">Nome</label>
